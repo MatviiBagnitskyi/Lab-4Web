@@ -1,0 +1,495 @@
+html{
+    box-sizing: border-box;
+   }
+   *{
+       box-sizing: inherit;
+   }
+   body{
+       margin: 0;
+       font-family: "Inter", sans-serif;
+       font-weight: 500;
+       font-size: 20px;
+   }
+   a{
+       text-decoration: none;
+       color: rgb(0, 0, 0);
+   }
+   ul{
+       margin: 0;
+       padding: 0;
+       list-style: none;
+   }
+   li{
+       display: inline-block;
+   }
+   h1{
+       margin: 0;
+   }
+
+   *.container{
+    max-width: 1920px;
+    min-width: 1920px;
+    margin: 0 auto;
+}
+   .header{
+    position: relative;
+    max-width:1920px;
+    max-height: 80px;
+    width: 1920px;
+    height: 80px;
+    margin: 0 auto;
+   }
+   .header_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000000;
+    height: 80px;
+   }
+   .header_content_left{
+    display: flex;
+    min-width: 800px;
+    align-items: center;
+   }
+   .header_content_left img{
+    margin: 0 20px 0 25px;
+   }
+   .header_menu{
+    display: block;
+   }
+   .header_menu .menu_item{
+    padding: 28px 5px 28px 15px;
+    margin: 0;
+   }
+   .menu_item .menu_item_style {
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    transition: all 0.5s;
+   }
+   .menu_item .menu_item_style:hover{
+    color: rgba(216, 101, 0, 0.926);
+   }
+   .header_menu_title {
+     font-size: 27px;
+     padding-right: 30px;
+   }
+   .header_content_right{
+    min-width: 200px;
+    padding-left: 20px;
+   }
+   .header_content_right img{
+    margin-right: 20px;
+   }
+   .model_range{
+    position: relative;
+    max-width: 1920px;
+    max-height: 1080px;
+    margin: 0 auto;
+   }
+   .model_range_bgimg{
+    width: 1920px;
+    height: 1080px;
+    background-image: url(../ImgProj/header_img/yamaha-r1.jpg);
+   }
+   .model_range_box{
+    position: absolute;
+    margin: -1000px 0px 0px 1150px;
+    background: #ffbe25;
+    width: 700px;
+    height: 900px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px 3px;
+   }
+   .model_range_media{
+    padding: 60px 60px 0px 60px;
+   }
+   .model_range_info{
+    padding-left: 267px;
+   }
+   .model_range_title{
+    width: 165px;
+   }
+   .model_range_info-motorcycle{
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+    
+   }
+   .model_range_info-motorcycle-left{
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 45px;
+}
+.motorcycle-left-top{
+    padding-bottom: 20px;
+}
+.model_range_info-motorcycle-left .motorcycle-left-top::before{
+    content: '';
+    width: 32px;
+    height: 32px;
+    background-image: url(../ImgProj/header_img/configuration.png);
+    position: absolute;
+    left: 5px;
+    top: -5px;
+}
+.motorcycle-left-center{
+    padding-bottom: 20px;
+}
+.model_range_info-motorcycle-left .motorcycle-left-center::before{
+    content: '';
+    width: 32px;
+    height: 32px;
+    background-image: url(../ImgProj/header_img/malfunction.png);
+    position: absolute;
+    left: 5px;
+    top:  40px;
+}
+.model_range_info-motorcycle-left .motorcycle-left-bottom::before{
+    content: '';
+    width: 32px;
+    height: 32px;
+    background-image: url(../ImgProj/header_img/oil.png);
+    position: absolute;
+    left: 5px;
+    top:  82px;
+}
+.model_range_info-motorcycle-right{
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-right: 10px;
+}
+.motorcycle-right-top{
+    padding-bottom: 20px;
+}
+.model_range_info-motorcycle-right .motorcycle-right-top::before{
+    content: '';
+    width: 32px;
+    height: 32px;
+    background-image: url(../ImgProj/header_img/settings.png);
+    position: absolute;
+    left: -35px;
+    top: 0px;
+}
+.motorcycle-right-center{
+    padding-bottom: 20px;
+}
+.model_range_info-motorcycle-right .motorcycle-right-center::before{
+    content: '';
+    width: 32px;
+    height: 32px;
+    background-image: url(../ImgProj/header_img/motorcycle.png);
+    position: absolute;
+    left: -35px;
+    top:  40px;
+}
+.model_range_info-motorcycle-right .motorcycle-right-bottom::before{
+    content: '';
+    width: 32px;
+    height: 32px;
+    background-image: url(../ImgProj/header_img/canister.png);
+    position: absolute;
+    left: -35px;
+    top:  82px;
+}
+.model_range-price{
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 60px 0px 10px 275px;
+    
+}
+.model_range-button{
+    opacity: 1;
+    font-size: 22px;
+    line-height: 26px;
+    padding-top: 10px;
+}
+.model_range-button a:hover{
+    opacity: 1;
+    color: #000000;
+    transition: all 0.7s;
+    background-color: rgba(255, 255, 255, 0.829);
+    border: 1px solid rgba(0, 0, 0);
+}
+.model_range-btn{
+    text-align: center;
+    display: inline-block;
+    width: 350px;
+    height: 60px;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 16px 23px;
+    border-radius: 30px;
+    font-family: "Inter", sans-serif;
+    background-color: rgb(0, 0, 0);
+    color:rgb(255, 255, 255) ;
+    margin-left: 175px;
+}
+
+.info_offer_box{
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+    max-width: 1920px;
+    max-height: 1080px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
+.info_offer-slick-slider{
+    position: absolute;
+    display: block;
+    width: 650px;
+    height: 930px;
+    margin: -320px 0px 0px 1271px;
+    background: rgba(84, 84, 84, 0.7);
+}
+.info_offer-slider{
+   display: block; 
+    /* background: #000; */
+}
+.offer-slider{
+    padding: 2.5% 5% 2.5% 5%;
+    width: 100%;
+    height: 350px;
+    border-radius: 11%;
+}
+.slick-arrow{
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 0;
+    padding: 0;
+    width: 37px;
+    height: 37px; 
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: rgb(220, 220, 220);
+     cursor: pointer;
+    position: absolute;
+}
+.slick-prev{
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.slick-next{
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.slick-prev::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 24px;
+    height: 24px;
+    background-image: url(../ImgProj/header_img/arrow-left-img.png);
+    transform: translate(-50%, -50%);
+}
+.slick-next::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 24px;
+    height: 24px;
+    background-image: url(../ImgProj/header_img/arrow-right-img.png);
+    transform: translate(-50%, -50%);
+}
+
+
+   /* .header_title{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    align-items: center;
+    margin-bottom: 320px;
+}
+.header_title_left{
+    display: flex;
+    min-width: 800px;
+    align-items: center;
+}
+.header_title_left img{
+    margin-right: 60px;
+    margin-left: 25px;
+}
+.header_title_right{
+    min-width: 270px;
+}
+.header_title_right img{
+    margin-right: 20px;
+}
+ .menu{
+    display: block;
+     
+ }
+ .menu .menu_item{
+    padding: 28px 25px 28px 25px;
+    margin: 0;
+ } */
+ /* .menu .menu_item:hover{
+    background: #515151;
+    transition: all 0.5s;
+ } */
+ /* .menu_item .menu_item_style{
+    color: #000;
+    opacity: 0.6;
+    padding-bottom: 26px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    transition: all 0.5s;
+ }
+ .menu_item .menu_item_style:hover{
+    opacity: 1;
+    font-size: 22px;
+
+ }*/
+ 
+ /* .burger_menu {
+    position: absolute;
+    margin-top: 20px; 
+    top: 130px;
+    left: 596px;
+    width: 260px;
+    height: 225px;
+    background: rgba(255, 255, 255);
+    display: none;
+    box-shadow:rgb(0, 0, 0) 2px 3px 6px 0px;
+ } 
+ .burger_menu .drop_menu {
+    padding: 8px;
+    width: 100%;
+    height: 20%;
+    border: 1px solid rgba(0,0,0, 0.1);
+    transition: all 0.5s;    
+ }
+ .burger_menu .drop_menu:hover {
+    padding-left: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: #000;
+    color: #FFFFFF;
+ }
+.menu_item:hover > .burger_menu { 
+    display: initial;
+ }
+ .burger_menu .drop_menu_item {
+    display: block;
+    color: #000000;
+    opacity: 0.6;
+    padding-bottom: 3px;
+    transition: all 0.5s;
+}
+.burger_menu .drop_menu_item:hover{
+    opacity: 1;
+    color: #FFFFFF;
+} */
+
+.footer{
+    max-width: 1920px; 
+    min-width: 1920px;
+    height: 500px; 
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-color: rgb(0, 0, 0);
+}
+.footer_head-box{
+    display: flex;
+   
+}
+.footer_head{
+    text-align: center;
+    margin: 40px 0px 40px 917px;
+}
+.footer_head h2{
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+}
+.footer_box{
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+.footer_left{
+    width: 480px;
+    background-color: rgb(0, 0, 0);
+    padding-bottom: 25px;    
+}
+.footer_h1_head{
+    margin: 0px 0px 15px 100px;
+    font-size: 25px;
+}
+.footer_left-shopping{
+    margin-left: 100px;
+}
+.footer_info-text{
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    line-height: 32px;
+}
+.footer_info-text a{
+    color: #FFFFFF;
+}
+.footer_center_1{
+    width: 480px;
+    background-color: rgb(0, 0, 0);
+}
+.footer_center-offers{
+    margin-left: 100px;
+}
+.footer_center_2{
+    width: 480px;
+    background-color: rgb(0, 0, 0);
+}
+.footer_center-service{
+    margin-left: 100px;
+}
+.footer_right{
+    width: 480px;
+    background-color: rgb(0, 0, 0);
+}
+.footer_left-brands{
+    margin-left: 100px;
+}
+.hr-style{
+    margin: 35px 35px 0px 35px;
+}
+.footer_info_bottom{
+    display: flex;
+    min-width: 800px;
+    align-items: center;
+}
+.menu_bottom{
+    margin: 15px -20px 0px 70px;
+    font-size: 22px;
+}
+.menu_bottom a{
+    color: #ffffff;
+    opacity: 0.7;
+    padding-bottom: 2px;
+    border-bottom: 3px solid transparent;
+    transition: all 0.5s;
+}
+.menu_bottom a:hover{
+    opacity: 1;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.bottom_icon{
+    margin: 15px 0px 0px 100px;
+}
+.bottom_icon img{
+    margin-right: 20px;
+}
